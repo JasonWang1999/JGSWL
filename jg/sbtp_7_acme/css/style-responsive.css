@@ -24,8 +24,8 @@
     .head-section .nav li a.dropdown-toggle .dropdown-menu li a:hover,
     .head-section .nav li.active a,
     .head-section .dropdown-menu li a:hover {
-        color: #fff !important;
-    }
+        color:rgba(255,255,255,0.1)
+    } 
 
     .head-section .navbar-nav > li {
         padding: 0;
@@ -115,9 +115,6 @@
         margin-right: -10px;
     }
 
-    .head-section .nav li .dropdown-menu li a:hover {
-        color: #48C9B0 !important;
-    }
 
     .navbar-brand {
         margin-top: 10px !important;
