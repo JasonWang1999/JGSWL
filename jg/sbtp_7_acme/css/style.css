@@ -118,7 +118,6 @@ ul.dropdown-menu { border: none }
 }
 .head-section .nav li .dropdown-menu li a {
     line-height: 30px;
-    padding: 3px 12px;
     border-bottom: 1px solid #F3E8E8;
 }
 .copyrights{
@@ -1198,7 +1197,7 @@ ul.tag li a {
 /*footer*/
 .footer {
     color:#000000;
-    padding: 20px 0;
+    padding: 10px 0;
     display: inline-block;
     width: 100%;
 }
@@ -1206,8 +1205,6 @@ ul.tag li a {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 20px;
 }
 .footer address a { color: #48cfad }
 .tweet-box {
