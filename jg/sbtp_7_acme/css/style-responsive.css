@@ -34,11 +34,11 @@
 
     .head-section .nav li ul.dropdown-menu li a {
         margin-left: 0px;
-        color: #999!important; ;
+        color: #999;
     }
 
     .head-section .nav li .dropdown-menu li a:hover, .head-section .nav li .dropdown-menu li.active a {
-        color: #fff !important;
+        color:#00AEC1;
     }
 
     .purchase-btn, .about-testimonial {
