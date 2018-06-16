@@ -21,7 +21,6 @@ a { color:# }
 a:hover { color: #48cfad }
 p { line-height: 22px }
 /*header*/
-.head-section { border-bottom: 1px solid #eee }
 .head-section .navbar {
     margin-bottom: 0;
 }
@@ -583,10 +582,6 @@ ul.about-flex-slides { margin-left: 0 }
     box-sizing: border-box;
 }
 /*IMGS IN CONTAINER*/
-[data-zlname] > img {
-    display: block;
-    max-width: 100%;
-}
 /*POP UP ELEMENTS*/
 [data-zlname] [data-zl-popup] {
     position: absolute;
@@ -826,7 +821,6 @@ section.contact-infos {
     transition: all .3s ease;
 }
 .carousel-control {
-    background: #000000 !important;
     bottom: 40%;
     color: #FFFFFF;
     font-size: 20px;
@@ -2954,4 +2948,27 @@ div.header h3{
     position: absolute;
     left:50%;
     top:-4px;
+}
+#bq{
+	background:#e18faa;
+	margin: 10px 0px;
+}
+
+#bq a{
+	color: white;
+	font-size: 15px
+}
+#bq .active a{
+	color: black;
+}
+#nr h3{
+	font-family: "楷体";
+	color: #e18faa;
+	font-size: 30px
+}
+#nr img {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
 }
