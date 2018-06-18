@@ -41,6 +41,28 @@
 			height: 130px;
 			font-size: 30px
 		}
+		.lb{
+			width:50%;
+			height: 100px;
+			line-height: 100px;
+			font-family: "黑体";
+			background:  transparent;
+			text-align: right;
+			
+			border-bottom: 100px solid #91dde7;
+			border-right: 50px solid transparent;
+
+		}
+		@media screen and (max-width: 768px){
+			.lb{
+				padding-top: 160px;
+			border-bottom: 50px solid #91dde7;
+			border-right: 25px solid transparent;
+				font-size: 15px;
+				line-height: 50px
+
+			}
+		}
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -148,29 +170,24 @@
 <!--  内容-->
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="../img/mdfb1.png" alt="0">
-      <div class="carousel-caption">
+      <div class="carousel-caption lb">
         门店形象/Store images
       </div>
     </div>
     <div class="item">
       <img src="../img/mdfb2.png" alt="1">
-      <div class="carousel-caption">
+      <div class="carousel-caption lb">
         门店形象/Store images
       </div>
     </div>
     <div class="item">
       <img src="../img/mdfb3.png" alt="2">
-      <div class="carousel-caption">
+      <div class="carousel-caption lb">
         门店形象/Store images
       </div>
     </div>
@@ -186,8 +203,8 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-   <div class="container-fuild">
-   <img src="../img/mdfb4.png"  class="img-responsive center-block">
+   <div class="container-fulid">
+   <img src="../img/mdfb4.png"  class="img-responsive center-block" style="width: 100%;height: 100%">
    </div>
     <!--footer start-->
     <footer class="footer" style="font-family: '楷体';color:black">

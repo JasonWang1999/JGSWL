@@ -2950,8 +2950,11 @@ div.header h3{
     top:-4px;
 }
 #bq{
-	background:#e18faa;
-	margin: 10px 0px;
+	height: 0px;
+	line-height: 90px;
+	padding-left: 20px;
+	border-bottom: 41px solid #e18faa;
+    border-left: 25px solid transparent;
 }
 
 #bq a{

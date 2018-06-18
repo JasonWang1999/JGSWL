@@ -26,6 +26,14 @@
 		#dh a:hover{color:#00AEC1}
 		#dh li ul li a{color:#999}
 		body{font-family:"楷体"}
+		.triangle{
+			width: 0px;
+                height: 0px;
+                border-color:#e18faa transparent;
+                border-width: 0px 0px 25px 25px;
+                border-style: solid;
+			display: inline-block;
+		 }
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -129,15 +137,19 @@
     <!-- Sequence Modern Slider -->
     <div class="container">
     	<div class="row">
-    	<ul class="nav nav-tabs align-right" id="bq">
-    <li class="active"><a data-toggle="tab" href="#home">公司简介</a></li>
-    <li><a data-toggle="tab" href="#menu1">果恋之缘</a></li>
-    <li><a data-toggle="tab" href="#menu2">品牌形象</a></li>
+    	<div class="row">
+    	<div class="col-lg-4"></div>
+    	<div class="col-lg-8">
+    	<ul class="nav nav-tabs  " id="bq">
+    <li class="active "><a data-toggle="tab" href="#home">公司简介</a></li>
+    <li class=" "><a data-toggle="tab" href="#menu1">果恋之缘</a></li>
+    <li class=" "><a data-toggle="tab" href="#menu2">品牌形象</a></li>
   </ul>
-
+  </div>
+		</div>
   <div class="tab-content container" id="nr">
     <div id="home" class="tab-pane fade in active">
-      <h3>公司简介</h3>
+      <h3><div class="triangle"></div>&nbsp;公司简介</h3>
       <div class="row">
       <div class="row" style="background: url(../img/glzy1.png) no-repeat;background-size: cover">
       <div class="col-lg-7" style="color: black;font-size:25px; line-height: 40px;margin: 50px 0px;padding: 20px 40px;font-weight: bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杭州古味餐饮有限公司是一家创新型的大众餐饮公司，公司以敏锐的目光、鲜明的个性，在餐饮文化与视觉形象上寻求客户的互动与沟通。优秀的设计团队保证了IP的原创和高辨识度，资深的研发团队保证了产品的品质优良和及时更新，成熟的运营管理团队保证了项目运作的规范化和长远性，完善的后勤保证了发展的更稳健。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浆果食物恋是杭州古味餐饮旗下的新兴饮品项目。独创果融酸奶新品类，在品类细分化的饮品市场打开新局面。</div>
@@ -155,7 +167,7 @@
       </div>
     </div>
     <div id="menu1" class="tab-pane fade">
-      <h3>果恋之缘</h3>
+      <h3><div class="triangle"></div>&nbsp;果恋之缘</h3>
       <div class="row">
       	<div class="col-lg-5">
       		<img src="../img/glzy3.png"  class="img-responsive center-block">
@@ -183,7 +195,7 @@
       	</div>
     </div>
     <div id="menu2" class="tab-pane fade">
-      <h3>品牌形象</h3>
+      <h3><div class="triangle"></div>&nbsp;品牌形象</h3>
 <div class="row">
      <div class="col-lg-12">
      	<img src="../img/glzy4.png" class="img-responsive center-block">
@@ -319,6 +331,21 @@
 				$('#2wm').css("display","none")
 			})
 		})
+		var ur=location.href;
+		
+		var aaa=ur.split('#')[1];
+		switch (aaa){
+        case 'home':
+            $('#bq a[href="#home"]').tab('show')
+            break;
+        case 'menu1':
+            $('#bq a[href="#menu1"]').tab('show')
+            break;
+        case 'menu2':
+            $('#bq a[href="#menu2"]').tab('show')
+            break;
+     }     
+		
     </script>
   </body>
 </html>
